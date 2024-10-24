@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-button {
+    background-color:#6495ED;
+    color: white;
+    padding: 10px; /* Puedes ajustar el tamaño aquí */
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    right:  0;
+    background-color: #CCCCFF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.menu:hover .dropdown {
+    display: block; /* Mostrar en hover */
+}
+
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 9px; /* Ajusta el tamaño aquí */
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
