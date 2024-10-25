@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Define el lenguaje del documento -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres del documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite que el contenido se ajuste a diferentes tamaños de pantalla -->
+    <title>Formulario</title> <!-- Título que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="Formulario.css"> <!-- Enlaza el archivo CSS para estilos -->
+    <link rel="icon" type="image/png" href="/imagenes/becalosicon.png"> <!-- Enlaza el ícono de la pestaña (puedes agregar la URL de la imagen aquí) -->
+</head>
+
+<body>
+
+    <!-- Formulario para la entrada de datos del usuario -->
+    <form class="signUp-form">
+        <label id="titleDatos">Ingresa tus datos:</label> <!-- Título del formulario -->
+        <br><br> <!-- Saltos de línea para espaciado -->
+
+        <label for="nombre">Nombre completo:</label> <!-- Etiqueta para el campo de nombre -->
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo"> <!-- Campo de entrada para el nombre -->
+
+        <label for="curp">CURP:</label> <!-- Etiqueta para el campo CURP -->
+        <input type="text" id="curp" name="curp" placeholder="GAAL951204HDFRRS00"> <!-- Campo de entrada para el CURP -->
+
+        <label for="curp">Sexo:</label> <!-- Etiqueta para el campo de sexo -->
+        <br><br>
+
+        <!-- Opciones de selección de sexo -->
+        <label><input type="radio" name="option" value="male">Masculino.</label> <!-- Opción de radio para masculino -->
+        <label><input type="radio" name="option" value="female">Femenino.</label> <!-- Opción de radio para femenino -->
+        <br>
+
+        <label for="correo">Ingresa tu email:</label> <!-- Etiqueta para el campo de correo electrónico -->
+        <input type="email" id="correo" placeholder="Ingresa tu @email"><br><br> <!-- Campo de entrada para el correo electrónico -->
+
+        <label>Crea una contraseña:</label> <!-- Etiqueta para el campo de contraseña -->
+        <input type="password" placeholder="Min. 6 Max. 20 caracteres." minlength="0" maxlength="20"><br><br> <!-- Campo de entrada para contraseña -->
+
+        <label>Vuelve a escribir tu contraseña:</label> <!-- Etiqueta para volver a ingresar la contraseña -->
+        <input type="password" placeholder="Ingresa de nuevo tu contraseña." minlength="0" maxlength="20"><br><br> <!-- Campo de entrada para confirmar la contraseña -->
+
+        <label>Escribe tu teléfono:</label> <!-- Etiqueta para el campo de teléfono -->
+        <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br> <!-- Campo de entrada para teléfono con patrón -->
+
+        <label>Fecha de nacimiento:</label> <!-- Etiqueta para el campo de fecha de nacimiento -->
+        <input type="date"> <!-- Campo de entrada para seleccionar la fecha -->
+
+        <p>¿Eres un robot?</p> <!-- Pregunta de verificación para los usuarios -->
+
+        <!-- Opciones de respuesta para la verificación -->
+        <label><input type="radio" name="option" value="house">Si.</label> <!-- Opción de radio para "Sí" -->
+        <label><input type="radio" name="option" value="money">No.</label> <!-- Opción de radio para "No" -->
+
+        <!-- Botón de envío del formulario -->
+        <button type="submit" class="button">Enviar</button> <!-- Botón para enviar el formulario -->
+
+    </form>
+
+</body>
+
+</html>

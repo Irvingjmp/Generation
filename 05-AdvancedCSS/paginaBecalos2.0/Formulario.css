@@ -1,0 +1,104 @@
+/* Definición de variables CSS para colores, facilita cambios globales */
+:root {
+    --primary-bg: #DCE2F2; /* Color de fondo principal */
+    --form-bg: #976f44c7; /* Color de fondo del formulario */
+    --label-bg: rgba(0, 0, 0, 0.482); /* Fondo de las etiquetas */
+    --button-bg: #6cb5a3; /* Color de fondo de los botones */
+    --text-color: rgb(255, 255, 255); /* Color de texto general */
+}
+
+/* Estilo del body */
+body {
+    background-color: var(--primary-bg); /* Aplica el color de fondo definido en la variable */
+}
+
+/* Estilo del formulario */
+.signUp-form {
+    background-color: var(--form-bg); /* Aplica el color de fondo del formulario */
+    padding: 75px; /* Espaciado interno alrededor del contenido */
+    margin: 400px auto; /* Margen superior e inferior de 70px, centrado horizontalmente */
+    border-radius: 80px; /* Esquinas redondeadas */
+    max-width: 500px; /* Ancho máximo del formulario */
+    box-shadow: 10px 10px 10px rgb(0, 47, 255); /* Sombra alrededor del formulario */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fuente utilizada en el formulario */
+}
+
+/* Estilo del título de datos */
+/* Estilo del título de datos */
+#titleDatos {
+    background-color: rgb(0, 0, 0); /* Color de fondo del título */
+    padding: 10px; /* Espaciado interno del título */
+    margin: 0 auto; /* Margen automático para centrar */
+    border-radius: 3px; /* Esquinas redondeadas del título */
+    text-align: center; /* Centra el texto dentro del título */
+    width: fit-content; /* Ajusta el ancho al contenido */
+}
+
+/* Estilo de las etiquetas en el formulario */
+.signUp-form label {
+    width: 50%; /* Ancho total para las etiquetas */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 12px; /* Margen inferior entre etiquetas */
+    display: block; /* Hace que las etiquetas sean elementos de bloque */
+    color: var(--text-color); /* Color del texto de las etiquetas */
+    background-color: var(--label-bg); /* Color de fondo de las etiquetas */
+    padding: 5px 10px; /* Espaciado interno de las etiquetas */
+    border-radius: 10px; /* Esquinas redondeadas de las etiquetas */
+    border: 2px solid var(--text-color); /* Borde blanco alrededor de las etiquetas */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+/* Estilo de los campos de entrada en el formulario */
+.signUp-form input[type="text"],
+.signUp-form input[type="email"],
+.signUp-form input[type="password"],
+.signUp-form input[type="tel"],
+.signUp-form input[type="date"] {
+    width: 100%; /* Ancho total para los campos de entrada */
+    padding: 10px; /* Espaciado interno de los campos de entrada */
+    margin: 6px 0 16px; /* Margen superior, inferior, y lateral entre campos */
+    border: 4px outset #940ce8bd; /* Borde de los campos de entrada */
+    border-radius: 20px; /* Esquinas redondeadas de los campos de entrada */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fuente utilizada en los campos de entrada */
+}
+
+/* Estilo de los botones en el formulario */
+.signUp-form input[type="submit"],
+.signUp-form input[type="button"],
+.button {
+    background-color: var(--button-bg); /* Aplica el color de fondo de los botones */
+    color: var(--text-color); /* Color del texto de los botones */
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    border: none; /* Sin borde para los botones */
+    border-radius: 4px; /* Esquinas redondeadas de los botones */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.3s ease; /* Transición suave para cambios en el estado del botón */
+}
+
+/* Efecto hover para los botones */
+.button:hover {
+    transform: scale(1.1) translateY(-3px); /* Aumenta el tamaño y mueve el botón hacia arriba */
+    color: var(--text-color); /* Cambia el color del texto al pasar el ratón */
+}
+
+/* Estilo adicional para el pseudo-elemento del botón */
+.button::before {
+    content: ""; /* Crea un pseudo-elemento vacío */
+    width: 70%; /* Ancho del pseudo-elemento */
+    height: 1px; /* Altura del pseudo-elemento */
+    position: absolute; /* Posiciona el pseudo-elemento de manera absoluta */
+    bottom: 0; /* Coloca el pseudo-elemento en la parte inferior */
+    left: 15%; /* Centra el pseudo-elemento horizontalmente */
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 0) 100%); /* Crea un degradado blanco */
+    opacity: 0.2; /* Hace que el pseudo-elemento sea semi-transparente */
+    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1); /* Transición suave para el pseudo-elemento */
+}
+
+/* Efecto hover para el pseudo-elemento */
+.button:hover::before {
+    opacity: 1; /* Hace que el pseudo-elemento sea completamente opaco al pasar el ratón */
+}
