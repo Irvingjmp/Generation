@@ -74,5 +74,91 @@ console.log(sumar(2, 3)); // 5
   };
   
   persona.saludar(); // "Hola, soy Ana"
+
+  //Instancia
+
+  function Persona(nombre) {
+    this.nombre = nombre;
+  }
   
+  const juan = new Persona("Juan");
+  console.log(juan.nombre); // "Juan"
+
+//Prototype
+
+function Persona(nombre) {
+  this.nombre = nombre;
+}
+
+// Agregar un método al prototype
+Persona.prototype.saludar = function() {
+  console.log("Hola, soy " + this.nombre);
+};
+
+const maria = new Persona("María");
+const pedro = new Persona("Pedro");
+
+maria.saludar(); // "Hola, soy María"
+pedro.saludar(); // "Hola, soy Pedro"
+
+
+  // Actividad - reconocer antes de programar 
+
+  var x = 10;
+  function createFunction1() {
+ var x = 20;
+    return new Function('return x;'); 
+  }
+ 
+  function createFunction2() {
+    var x = 20; function f() {
+       return x; 
+     }
+     return f;
+   }
+   var f1 = createFunction1();
+   console.log(f1()); // 10
+   var f2 = createFunction2();
+   console.log(f2()); // 20  
+
+//Hoisting 
+
+saludar();
+
+function saludar() {
+  console.log("Hola!");
+}
+
+//Auto-invocación
+
+(function() {
+    const mensaje = "Esta es una IIFE";
+    console.log(mensaje);
+  })(); 
+
+  // Funciones utilizadas como valores
+  const multiplicar = function(a, b) {
+    return a * b;
+  };
   
+  function calcular(operacion, a, b) {
+    return operacion(a, b);
+  }
+  
+  console.log(calcular(multiplicar, 2, 3)); 
+  
+
+//Funciones anónimas
+
+const numeros = [1, 2, 3, 4];
+
+const duplicados = numeros.map(function(numero) {
+  return numero * 2;
+});
+
+console.log(duplicados); // [2, 4, 6, 8]
+
+//Funciones Arrow 
+const saludar = () => console.log("Hola!");
+
+saludar(); 
