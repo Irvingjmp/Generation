@@ -16,5 +16,23 @@ function calculate(operation) {
         }
     }
 
+    // if (isNaN(number1) || isNaN(number2)) {
+    //     result = "Por favor ingrese números válidos";
+    // } else {
+    //     switch (operation) {
+    //         case 'add':
+    //             result = number1 + number2;
+    //             break;
+    //         case 'subtract':
+    //             result = number1 - number2;
+    //             break;
+    //         case 'multiply':
+    //             result = number1 * number2;
+    //             break;
+    //         default:
+    //             result = "Operación no válida";
+    //     }
+    // }
+
     document.getElementById('result').innerText = `Resultado: ${result}`;
 }
