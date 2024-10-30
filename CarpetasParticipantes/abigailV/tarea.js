@@ -22,11 +22,11 @@ console.log(costoTotal)
 // Exercise #2
 // Part 1
 // Ed would like a way to input 3 names of his friends. The output should be a console greeting to his friends saying: Welcome {name1}, {name2}, {name3}.
-let nombre = prompt ("Ingresa tu nombre: ");
+let nombre = "Jesus";
 
-let nombre1= prompt ("Ingresa el nombre: ");
+let nombre1= "María";
 
-let nombre3 = prompt ("Cuántos dias llevan juntos?:");
+let nombre3 = "Juan;
 
 console.log{
     ("Welcome", nombre,nombre1,nombre3)
