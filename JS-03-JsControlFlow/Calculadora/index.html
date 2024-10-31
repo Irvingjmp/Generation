@@ -15,10 +15,10 @@
         </div>
         <form id="miSuperCalculadora" class="text-center" >
             <div class="mb-3">
-                <input onchange="onInputOneChange()" type="number" id="numero1" placeholder="Aqui va tu primer numero" class="form-control" >
+                <input  type="number" id="numero1" placeholder="Aqui va tu primer numero" class="form-control" >
             </div>
             <div class="mb-3">
-                <input onchange="onInputOneChange()" type="number" id="numero2" placeholder="Aqui va tu segundo numero" class="form-control" >
+                <input  type="number" id="numero2" placeholder="Aqui va tu segundo numero" class="form-control" >
             </div>
             <!-- Aqui inicia sección de botones -->
             <div class="d-flex justify-content-center">
@@ -29,6 +29,7 @@
                 <!-- aqui inicia boton mutiplicacion -->
                 <button  onclick="operacionMatematica('multi')" type="button" class="btn btn-success"> Multiplicación</button>
             </div>
+            <!-- Aqui esta la sección para visualizar mi resultado -->
             <div class="mt-4">
                 <h4 class="text-center" id="result"> Resultado: --</h4>
             </div>
