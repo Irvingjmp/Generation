@@ -1,0 +1,2 @@
+Una disculpa, el flujo del bootcamp me encanta, sin embargo no sabia que tan pesado se volveria al grado de dejarme sin tanto tiempo para crear esta pagina, les agradezco su paciencia y en breve terminare este proyecto.
+kiss n´ hugs Gary.
