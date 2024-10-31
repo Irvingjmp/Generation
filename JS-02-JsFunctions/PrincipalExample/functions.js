@@ -1,6 +1,6 @@
 // Declarar o definir funciones
 
-function nombreFuncion(param1, param2) {
+function nombreFuncion(param1, param2) {//function paabe¿ra reservada
     // Código a ejecutar
     return param1 + param2; 
    }
@@ -14,9 +14,13 @@ function sumar(a, b) {
     let resultado = a + b; 
     return resultado;
   }
+<<<<<<< HEAD
+// funcion sumar
+=======
 
   //funcionSumar <- el tipo es function
   
+>>>>>>> origin/CH47
   console.log(resultado);
 
 //   alcance global
