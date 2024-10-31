@@ -1,4 +1,12 @@
-// En JavaScript, los arreglos (arrays) son estructuras de datos que permiten almacenar múltiples valores en una sola variable.
+/* En JavaScript, los arreglos (arrays) son estructuras de datos que permiten almacenar múltiples valores en una sola variable.
+Los arreglos son estructuras de datos que sirven para almacenar varios datos del mismo tipo en un contenedor. En programación, se les conoce como arrays. 
+Algunas características de los arreglos son:
+Son colecciones finitas, homogéneas y ordenadas. 
+Tienen un límite, es decir, se debe determinar el número máximo de elementos que podrán formar parte del arreglo. 
+Todos los elementos de un arreglo son del mismo tipo. 
+Se distinguen y se refieren por un índice. 
+Tienen un nombre de variable único que representa a cada elemento dentro de él. 
+Los elementos dentro del array son guardados en posiciones de memoria de forma continua. */
 // Ejemplo 1: Creando y Modificando Arreglos
 function ejemplo1() {
   let frutas = ["manzana", "naranja", "pera"];
@@ -161,6 +169,29 @@ for (let i = 1; i <= 5; i++) {
 }
 console.log(pattern);
 
+//*****
+//*   *
+//*   *
+//*   *
+//*****
+function printBoxPattern(size) {
+  let pattern = "";
+
+  for (let i = 0; i < size; i++) {
+    if (i === 0 || i === size - 1) {
+      // Imprimir línea completa de asteriscos para la primera y última fila
+      pattern += "*".repeat(size) + "\n";
+    } else {
+      // Imprimir asterisco, espacios y otro asterisco para las filas intermedias
+      pattern += "*" + " ".repeat(size - 2) + "*" + "\n";
+    }
+  }
+  console.log(pattern);
+}
+
+// Llamada a la función con tamaño de 5
+printBoxPattern(5);
+
 // Exercise #3
 // Write while loops to do the following:
 
@@ -217,3 +248,112 @@ function sumaPrimerosNums(n) {
 console.log("Suma de los primeros n números enteros positivos:");
 console.log("Suma cuando n = 5:", sumaPrimerosNums(5));
 console.log("Suma cuando n = 10:", sumaPrimerosNums(19));
+
+//_________________________________________________
+
+//Ejercicio de Fechas: Eva acaba de comenzar su nuevo puesto como Desarrolladora Junior en un banco. Está trabajando en cuentas de clientes para una nueva aplicación de banca móvil. Se le pide que implemente una función que muestre la fecha de transacción más reciente para un cliente. Para comenzar a diseñar esto, ella comienza con 3 fechas de transacción.
+
+//Tipos de datos = String
+
+function obtenerFechaMasReciente(transacciones) {
+  //Para comparar las fechas, conviene convertir cada una en un objeto Date, ya que esto facilita las operaciones de comparación.
+  const fechasTransacciones = transacciones.map((fecha) => new Date(fecha));
+  //Podemos usar el método reduce para recorrer las fechas y comparar cada una con la última fecha más reciente encontrada.
+  const fechaMasReciente = fechasTransacciones.reduce(
+    (fechaReciente, fechaActual) => {
+      return fechaActual > fechaReciente ? fechaActual : fechaReciente;
+    }
+  );
+  //Esta función reduce toma como primer parámetro la fecha más reciente encontrada hasta el momento (fechaReciente) y la compara con la fechaActual en cada iteración. Al final, devuelve la fecha más reciente.
+  return fechaMasReciente.toISOString(); // Formato ISO
+}
+
+// Ejemplo de uso
+const transacciones1 = [
+  "2023-10-12T10:30:00",
+  "2023-11-25T15:45:00",
+  "2023-08-10T09:15:00",
+  "2023-12-15T12:00:00",
+  "2023-09-07T09:20:00",
+];
+console.log(
+  "La fecha de transacción más reciente es:",
+  obtenerFechaMasReciente(transacciones1)
+);
+
+//_______________________________________
+// Crear y asignar un arreglo
+const nums = [1, 2, 3, 4, 5, 6]; //arreglo estatico
+
+let dinamico = []; //arreglo dinamico
+
+const fruits = new Array("manzana", "kiwi", "pera", "sandia"); // fruits
+
+//Los arreglos se pueden acceder a ellos a través de los index
+console.log("El elemento en la posición 4 es:", nums[4]); // 5
+
+fruits[2] = "mango"; //Espero que en donde había peras, ahora sea mango
+
+console.log("Ahora el elemento en la ubicación 2 es:", fruits[2]); // mango
+// Existen metodos pre-creados para los arreglos, porque los arreglos son objetos
+//indexOf(), para usar un metodo de un arreglo, retoran un index es decir la posicion dentro del arreglo
+//se usa la syntaxis nombre.nombreMetodo();
+
+console.log("El index del elemento 'mango' es:", fruits.indexOf("mango")); // 2
+console.log("El index del elemento 'pera' es:", fruits.indexOf("pera")); // 3
+
+//los arreglos tienen atributos y metodos y un atributo es length
+console.log("El arreglo tiene:", dinamico.length, "elementos"); // 0
+
+//Otro método es push, para agregar elementos al final de un arreglo y retornar la nueva longitud
+dinamico.push("jabon");
+dinamico.push("arroz");
+dinamico.push("azucar");
+
+console.log("Ahora el arreglo tiene:", dinamico.length, "elementos"); // 3
+
+//slice(), para extraer un segmento de un arreglo, es decir, hace un corte en base a un index inicial y un index final, hace una copia del arreglo para no modificarlo
+console.log("Arrelgo original:", fruits); // ['manzana', 'kiwi', 'mango', 'sandia']
+console.log("La copia del segmento de la matriz es:", fruits.slice(1, 3)); // ['kiwi', 'mango']
+
+//Otra forma de clonar un arreglo es crendo uno nuevo y asignarlo
+let clonFrutas = fruits.slice(3);
+
+console.log("La copia del arreglo es:", clonFrutas); // ['manzana', 'kiwi', 'mango', 'sandia']
+nums.push(7);
+nums.push(8);
+console.log("Arrelgo con push:", nums); // [1, 2, 3, 4, 5, 6, 7, 8]
+let clonNumeros = nums.slice(-2, -1); //para un solo elemento se coloca -1, y la posicion inicial se coloca -2	es decir tomará en cuenta que inicia del final al inicio el conteo
+console.log("La copia del arreglo es:", clonNumeros); // [2, 3]
+
+// _____________________________________________________
+
+//JS FOR Loops
+
+// for in - ciclos en las propiedades de un objeto
+// for of - valores de un objeto que tiene capacidad de ser iterado
+// while -  ciclos de un bloque de codido "mientras" ciertara condición es true
+// do/while - > ciclo que hace un bloque de código mientras la condición espcedificada sea true
+
+//FOR
+console.log("Ciclo FOR, para conocer lo que tiene el arreglo de frutas");
+console.log(fruits.length);
+for (let i = 0; i < fruits.length; i++) {
+  console.log("Elemento: ", i, " es: ", fruits[i]);
+}
+
+//While
+// function setBastaFlag(flag) {
+//   const abc = ["a", "b", "c", "d"];
+//   let i = 0;
+//   do {
+//     console.log(abc[i]);
+//     i++;
+//   } while (flag <= abc.length);
+// }
+
+//Metodo shift
+//Shift() es para remover elementos del principio del arreglo
+let primerElemento = nums.shift();
+console.log(nums); // [2, 3, 4, 5, 6, 7, 8]
+console.log(primerElemento); // 1
