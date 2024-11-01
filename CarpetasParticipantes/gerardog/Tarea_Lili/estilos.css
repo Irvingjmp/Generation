@@ -1,0 +1,134 @@
+/* Sintxis en CSS
+Selector: tomael elemento HTML al que se le va a 
+aplicar el estilo
+Propiedad: es la característica que se va a cambiar 
+por ejemplo el color, tamaña (font-size), etc.
+Valor: es el estilo que se le dará a la propiedad, por ejemplo
+red, blue, 16ps, etc.
+    p {
+  color: red; 
+    }   Selector: p, propiedad: color, valor: red */
+
+/*Diferencias
+Border: lo que "contiene" al elemento
+Padding: espacio entre el elemento y el borde (border)
+Margin: es el espacio que separa al borde de otros elementos
+*/
+
+/* Reglas para style
+las etiquetas de style se deben de contener dentro del head en un css 
+interno, de ser externo lo debo linkear en el mismo apartado
+*/
+
+/*<style en el body> 
+Sí, me parece que se puede usar en el body cuando asigno un id para
+un estilo en específico de alguna sección, por lo mismo, puedo tener
+más de una etiqueta de style
+*/
+
+/*500px
+Asignar este tamaño afectará al div, pero podría exceder las dimensiones
+de donde esté "conetenido" y será necesario ajustarlo
+*/
+
+/*boxModel
+El modelo box utiliza los elementos que hemos visto y crea una caja que
+va a "contener" el texto, imagen o lo que sea que asignemos:
+    div{
+        width: 200px;
+        padding: 20px;
+        border: 5px  black;
+        margin: 10px;
+    }
+*/
+
+/*
+*/
+
+
+/* Posición
+esta asigna donde se va a colocar el elemento dentro de la pagina
+hay varias opciones por ejemplo, relative que se determina a partir
+de la opción static o fixed donde se especifican las propiedades hacia
+los margenes de la pagina, yo la use en html para poner la descripción
+a la derecha
+*/
+
+
+/*Estilos de la página Sony - Play 4*/
+
+body {
+    font-family: "Simplifica";
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*https://www.programandoamedianoche.com/2018/01/como-funcionan-las-unidades-de-medida-vh-vw-vmin-y-vmax/
+                    colocar caja a media pantalla*/
+}
+
+/* Contenedor del producto */
+.container {
+    display: flex;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen del producto */
+.img_play img {
+    max-width: 300px;
+    height: auto;
+}
+
+/* Detalles del producto */
+.producto {
+    margin-left: 20px;
+}
+
+/* Título del producto */
+.titulo {
+    font-family: "Simplifica";
+    font-size: 36px;
+    margin: 0 0 0 0; /*especificando los 4 margenes 
+                      para ver como funciona*/
+}
+
+/* Descripción del producto */
+.descripcion {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify; /*se ve mejor*/
+}
+
+/* Precio del producto */
+.precio {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Botones del producto */
+.botones a {
+    margin-right: 10px;
+}
+
+.botones img {
+    width: 50px;
+    height: 50px;
+    /* justify-content: space-between; quería crear espacio, pero no encontré como */
+}
+
+
+
+
+
+
+
+

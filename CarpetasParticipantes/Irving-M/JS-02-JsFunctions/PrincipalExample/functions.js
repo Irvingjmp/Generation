@@ -10,7 +10,7 @@ console.log(nombreFuncion("hola","Liliana"));
 
 // alcance local
 
-function sum(a, b) {
+function sumar(a, b) {
     let resultado = a + b; 
     return resultado;
   }
@@ -62,6 +62,7 @@ console.log(sumar(2, 3)); // 5
   function saludar(nombre) {
     console.log("Hola, " + nombre);
   }
+  console.log("Saludar.name")
   console.log(saludar.name); // "saludar"
   console.log(saludar.length); // 1
 
