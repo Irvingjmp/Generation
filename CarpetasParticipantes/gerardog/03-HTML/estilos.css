@@ -1,0 +1,34 @@
+
+
+
+/* Margen negro para el apartado nombre */
+.nombre {
+    color: blue;
+}
+
+/* El apartado correo solo tiene una línea inferior (tipo subrayado) */
+#correo { /* en # porque el html tiene id="correo*/
+    border: none;
+    border-bottom: 3px dotted black; /*estilo de la linea 
+                                        solid-dashed-dotted*/
+}
+
+/* Estilo para el número de teléfono en 16px */
+.telefono {
+    color: seagreen;
+}
+
+.adjuntar {
+    text-align: center;
+}
+
+/* Centrar el botón enviar en el formulario */
+input[type="submit"] {
+    display: block;
+    margin: 20px auto;
+}
+input[type="button"] {
+    display: block;
+    margin: 20px auto;
+}
+
