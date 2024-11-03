@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  fondo-color: red;
+}
+
+h1{ color: rgb(55, 255, 0);}
+
+</style>
+</head>
+<body>
+<h1>Esta es mi pagina</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+
+/*Cuando mi regla de estilo inicia solo con el nombre de la etiqueta, en este ejemplo "body*/
+body{ /* hablo del elemento h1*/
+    div{
+        h1{
+
+        }
+    }
+    
+}
+
+/*Seleccionar por etiqueta html o elemento html, 
+nombre del elemento {
+    /* aqui dentro va mi regla css 
+}*/
+
+
+/*Utilizamos el selector de clase (class)  <div class="contenidos"> */
+
+.titulos{
+    /*todos los contenidos de la clase títulos, tendrán este estilo*/
+}
+
+.contenidos{
+    /*todos los contenidos de la clase títulos, tendrán este estilo*/
+}
+
+/*Selector con ID colocado en la etiqueta HTML <p id= "quintoP" > Quinto párrafo </p>*/
+/*#quintoP{
+    Regla de CSS
+    color: blue;
+}*/
+
+.contenidos{
+    /* van a tener la siguientes reglas de estilos */
+    /* Cuando utilizamos un selector identificador usamos # para referirnos a el  */
+p{
+        color: yellow;
+    }
+    #quintoP{
+        /* Regla de css */
+        color:blue;
+    }
+    
+
+
+
+
+
+

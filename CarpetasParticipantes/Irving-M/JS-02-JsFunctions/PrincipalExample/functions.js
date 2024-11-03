@@ -1,11 +1,11 @@
 // Declarar o definir funciones
 
-function nombreFuncion(param1, param2) {//function paabe¿ra reservada
+function nombreFuncion(param1, param2) {
     // Código a ejecutar
     return param1 + param2; 
-}
+   }
 
-// Invocar funciones
+//    Invocar funciones
 console.log(nombreFuncion("hola","Liliana"));
 
 // alcance local
@@ -14,8 +14,6 @@ function sumar(a, b) {
     let resultado = a + b; 
     return resultado;
   }
-
-  //funcionSumar <- el tipo es function
   
   console.log(resultado);
 
@@ -44,7 +42,7 @@ function padre() {
   padre(); 
   
 //Funcion es un objeto
-  console.log((function () {}).constructor === Function); //true
+  console.log((function () {}).constructor === Function); 
 
 //Los nombres van en camelCase
 function miFuncionEjemplo() {
@@ -59,14 +57,14 @@ function miFuncionEjemplo() {
 const sumar = new Function("a", "b", "return a + b");
 console.log(sumar(2, 3)); // 5
 
-  //Propiedades de funcion y metodos
+
+  //Propiiedades de funcion y metodos
   function saludar(nombre) {
     console.log("Hola, " + nombre);
   }
-  console.log(saludar.name); 
-  console.log(saludar.length);
-  //Las funciones se declaran, y se invocan, cuando le pedimos JS ejecute el codigo dentro de la función. 
-  saludar("Liliana");
+  console.log("Saludar.name")
+  console.log(saludar.name); // "saludar"
+  console.log(saludar.length); // 1
 
   //This
   const persona = {
@@ -139,11 +137,7 @@ function saludar() {
     console.log(mensaje);
   })(); 
 
-  //nombreFuncion();
-  //(Funcion)();
-
   // Funciones utilizadas como valores
-  
   const multiplicar = function(a, b) {
     return a * b;
   };
