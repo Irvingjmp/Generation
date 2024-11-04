@@ -1,0 +1,2 @@
+Para guardar la partida toma un siesta: al guardar la partida pasaran 8hrs en la vida real y tu salud se reestablecera al maximo.
+
