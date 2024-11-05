@@ -1,3 +1,4 @@
+<!-- CODIGO ANTERIOR
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +15,7 @@
 <br> 
         <label for="correo"> Correo electrónico </label>
         <input  id="correo"> 
-                &nbsp; <!--espacios en blanco-->
+                &nbsp; //espacios en blanco
                 &nbsp;
                 &nbsp;
                 &nbsp;
@@ -24,7 +25,7 @@
 <br>
         <label class="nacimiento">Fecha de nacimiento</label>
         <input type="date">
-                &nbsp; <!--espacios en blanco-->
+                &nbsp; //espacios en blanco
                 &nbsp;
                 &nbsp;
                 &nbsp;
@@ -48,10 +49,64 @@
         <input type="radio">
         <label>Quieres promociones</label>
     </form>    
+<script src="formulario.js"></script>
+</body>
+</html>-->
 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi formulario</title>
+    <!--<link rel="stylesheet" href="estilos.css">-->
+</head>
+<body>
+<h1>Primer formulario</h1>
+    <form>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre">
+<br> 
+        <label for="correo">Correo electrónico</label>
+        <input type="text" id="correo">
+                &nbsp; <!--espacios en blanco-->
+                &nbsp;
+                &nbsp;
+                &nbsp;
+        <label for="password">Ingresa tu contraseña</label>
+        <input type="password" id="password">
+<br> 
+<br>
+        <label for="nacimiento">Fecha de nacimiento</label>
+        <input type="date" id="nacimiento">
+                &nbsp; <!--espacios en blanco-->
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+        <label for="telefono">Número de contacto</label>
+        <input type="tel" id="telefono">
+<br> 
+<br>
+        <div>Adjuntar INE</div>
+        <input type="file" id="adjuntar">
+<br>
+        <input type="button" value="Registrar" id="registrarse">
+<br> 
+<br> 
+        <input type="checkbox" id="terminos">
+        <label for="terminos">Términos y condiciones</label>
+        <input type="radio" id="promociones">
+        <label for="promociones">¿Quieres promociones?</label>
+    </form>    
+<script src="formulario.js"></script>
 </body>
 </html>
-
 
 
 
