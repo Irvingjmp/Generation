@@ -20,9 +20,11 @@ console.log(newQueue);
 // It turns out David was saving a spot for his friend Renata. She shows up and goes behind him in the line. 
 // One more person (Elena) shows up and goes to the end of the line. What does the queue look like?
 
+let david = peopleWaitingAtTheBank.indexOf('David');
+peopleWaitingAtTheBank.splice(david + 1, 0, 'Renata');
 
-
-
+peopleWaitingAtTheBank.push ('Elena');
+console.log(peopleWaitingAtTheBank);
 
 
 
