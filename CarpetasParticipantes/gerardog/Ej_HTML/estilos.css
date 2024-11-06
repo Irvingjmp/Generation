@@ -1,0 +1,40 @@
+/* Fondo general de la página */
+body {
+    background-color: #bdbdc5; /* Color claro para un contrastar*/
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Formato para las imágenes*/
+img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+/* Estilo para los h1 (subrayados) */
+h1 {
+    text-decoration: underline;
+    font-family: 'Simplifica', sans-serif;
+}
+
+/* Estilo para los párrafos justificados */
+p {
+    text-align: justify;
+}
+
+/* Estilo para los h2 en color gris */
+h2 {
+    color: grey;
+}
+
+/* Ajuste de márgenes para los divs */
+div {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #d7d7e2; /* Fondo claro para cada sección agrupada*/
+    border-radius: 50px;
+}

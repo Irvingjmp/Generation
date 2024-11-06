@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Agregando bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class = "card card-calculadora">
+        <div class="card-body">
+            <h2 class="card-title text-center text-primary">
+                Mi primera calculadora
+            </h2>
+        </div>
+        <form id="miCaluladora" class="text-center">
+            <div class="mb-3">
+                <input type="number" id="numero1" placeholder="Aquí va el primer numero" class="form-control">
+            </div> 
+            <div class="mb-3">
+                <input type="number" id="numero2" placeholder="Aquí va el segundo numero" class="form-control">
+            <!--Aquí inicia sección de botones-->
+            </div>
+            <div class="d-flex justify-content-center">
+                <!-- Aquí inicia botón de suma -->
+                <button onclick="operacionMatematica('suma')" type="button" class="btn btn-primary">Suma</button>
+                <!-- Aquí inicia botón de resta -->
+                <button onclick="operacionMatematica('resta')" type="button" class="btn brn-secondary">Resta</button>
+                <!-- Aquí inicia botón de multiplicación -->
+                <button onclick="operacionMatematica('multi')" type="button" class="btn btn-success">Multiplicación</button>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-center" id="result">Resultado: --</h4>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

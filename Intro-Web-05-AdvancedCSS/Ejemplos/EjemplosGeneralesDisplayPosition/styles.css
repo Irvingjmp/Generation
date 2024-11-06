@@ -13,15 +13,17 @@ a {
   text-decoration: none;
   color: blue;
 }
+
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); 
   gap: 10px;
-
-  @media screen and (max-width:800px) {
-    width:100%;
-  }
+ 
 }
+.ExampleOne{
+  column-span: 3;
+}
+
 .grid-item {
   border: 1px solid #000;
   padding: 20px;
@@ -64,6 +66,12 @@ a {
   .main {
     float: left;
     width: 60%; /* The width is 60%, by default */
+  }
+
+  @media screen and (max-width:800px) {
+    .grid-container{
+      width:100%;
+    }
   }
   @media screen and (max-width:800px) {
     .left , .main, .right {width:100%;}
