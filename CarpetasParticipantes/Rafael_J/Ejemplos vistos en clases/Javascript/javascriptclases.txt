@@ -1,0 +1,5 @@
+es un lenguaje de programacion para comunicar y cumplir ordenes a mi ordenador.
+
+java solo esta del lado del back (solo back) mientras que javascript va a estar en ambos lados. 
+
+API: 
