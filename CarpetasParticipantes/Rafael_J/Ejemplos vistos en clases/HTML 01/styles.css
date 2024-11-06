@@ -1,0 +1,26 @@
+
+/* cuando mi regla de estilo inicia solamente con el nombre de la etiqueta, en este ejemplo "body"*/
+body {
+    /*aqui estoy hablando del elemento h1*/
+    div{
+        h1{
+             /*aqui dentro va mi regla css*/
+        }
+ }   
+
+
+
+}
+
+/* utilizamos el selector clase */
+.titulos{
+    /* van a tener la siguiente regla de estilos*/
+}
+.contenidos{
+    /* van a tener las siguientes reglas de estilos */
+    /* cuando utilizamos un selector identificador usamos # para referirnos a el*/
+    #quintoP{
+        /*regla de css*/
+        color:blue;
+    }
+}
