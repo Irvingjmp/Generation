@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #212220;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-contenido {
+    width: 100%;
+    max-width: 450px;
+    background-color: #d4dad6;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.form-contenido h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #f50a0a;
+    position: relative;
+}
+
+.datoEntrada {
+    background-color: #a6c7fd;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: max-height 05s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: #0a0202;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+.boton button{
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color: rgb(22, 170, 211);
+    color: rgb(255, 255, 255);
+    height: 40px;
+    border-radius: 10px;
+    border: auto;
+    outline: 0;
+    cursor: pointer;
+   
+}
+
+.boton button.deshabilitar {
+    background-color: rgb(10, 233, 28);
+    color: #06120a
+} 
