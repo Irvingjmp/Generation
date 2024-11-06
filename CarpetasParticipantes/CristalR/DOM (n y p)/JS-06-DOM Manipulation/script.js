@@ -16,6 +16,6 @@ function js_style() {
     } else {
         console.log("Primer nombre:", firstName);
         console.log("Apellido:", lastName);
-        // Aquí puedes agregar más acciones, como enviar los datos a un servidor, etc.
+
     }
 });
