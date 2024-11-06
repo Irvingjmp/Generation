@@ -66,7 +66,7 @@ function searchProduct() {
     if (searchInput) {
         // Filtrar el arreglo del catálogo para obtener productos que incluyan el texto buscado
         const filteredProducts = catalog.filter(product => product.toLowerCase().includes(searchInput));
-
+        console.log(filteredProducts);
         // Mostrar solo los productos que coinciden con la búsqueda
         displayCatalog(filteredProducts);
     } else {

@@ -1,0 +1,83 @@
+#titulo { /*  */
+    color: tomato;/*  */
+}
+
+p.especial { /*  */
+    color: mediumseagreen;
+}
+
+p.texto {
+    color:slateblue;
+}
+
+div p {/*  */
+    color:aquamarine;
+}
+
+div h2, div h3 {
+    color:brown;
+}
+
+* {/*  */
+    font-size: 24px;
+    color:black;
+}
+/* esto es un comentario*/
+/*.color {
+    color: #ff0000;
+}
+
+.color {
+    color: rgb(0, 255, 255,);
+}
+*/
+.color {
+     /* border: 5px red outset;  */
+    /* otros tipos de border (accedes a la seleccion pulsando control+tab)
+    dotted
+    dashed
+    solid
+    double
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden
+
+    desde groove hasta outset pueden ser usados para valores tridimencionales.
+    */
+    border-style: solid;
+    border-color:blue;
+    border-radius: 5px;
+    border-width: 2rem;
+}
+
+#fondo {
+    /*background-color: rgba(255,0,0);*/
+    /* opacity: 0.3; */
+    /*background-image: url("coffee.png");*/
+    height: 200px; 
+    /*background-repeat: repeat-y;
+    background-position: center top;*/
+    background: #f00 url(coffee.png) repeat-y center bottom / 100px 100px; /* esta propiedad debe ir al principio para que pueda modificarse todo sin confuciones. aparte el / es una forma de partir las propiedades para en este caso, incluir el tamaño. todo lo que está en notas, está condensado aqui. */
+    /* background-size: 100px 100px; */
+}
+
+.margen { /*  */
+    background-color: chocolate;
+    margin: 15px;/* tambien se pueden poner 4 valores para cada lado del margen de un elemento como 15px 20px 23px 30px*/
+    padding: 30px 15px 5px; /* genera espacios que van a estar solamente dentro del elemento*/
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red;
+}  
+
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify; /* esto determina la locacion de aliniado de un texto */
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+}   
