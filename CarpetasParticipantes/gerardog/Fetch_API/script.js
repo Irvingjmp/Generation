@@ -44,20 +44,18 @@
 //
 
 //Fetch
-const url = "https://pokeapi.co/api/v2/pokemon/bulbasaur";
+const url = "https://pokeapi.co/api/v2/pokemon/ditto";
 
-fetch(
-    url, //link
-    {
-        method: 'get'}, //definir objeto (los corchetes [] son para arreglos)
-).then((response) => {
-    console.log(response.data.name);
-}).catch((error) => {
-    console.error("ups, no se que paso");
-});
-console.log("después del fetch")
-
-
+fetch(url,{ //link definido
+    method: 'GET' //definir objeto (los corchetes [] son para arreglos)
+    }).then((response)=>{
+         return response.json();
+    }).then((data)=>{
+        console.log(data);
+    }).catch((error)=>{
+        console.error("ups no se que paso");
+    });
+     console.log("Despues del fetch");
 
 
 
