@@ -1,4 +1,4 @@
-{
+[{
     "nombre": "Andrea,",
     "edad" : 26,
     "hobbies" : [
@@ -6,7 +6,7 @@
         "Bailar",
         "Dibujar"
     ]
-}
+},
 
 {
     "nombre": "Alex,",
@@ -16,17 +16,15 @@
         "Coleccionar",
         "Automatizar"
     ]
-}
-
+},
 {
-    "nombre": "Hannia,",
+    "nombre": "Hannai,",
     "edad" : 22,
     "hobbies" : [
         "Leer",
-        "Jugar",
+        "Jugar"
     ]
-}
-
+},
 {
     "nombre": "Abigail,",
     "edad" : 28,
@@ -34,13 +32,13 @@
         "Bailar",
         "Netflix"
     ]
-}
-
+},
 {
     "nombre": "Cristal,",
     "edad" : 26,
     "hobbies" : [
         "Leer",
-        "Películas"
+        "Pelis"
     ]
 }
+]

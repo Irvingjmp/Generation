@@ -48,18 +48,23 @@ const url = "https://pokeapi.co/api/v2/pokemon/ditto";
 
 fetch(url,{ //link definido
     method: 'GET' //definir objeto (los corchetes [] son para arreglos)
-    }).then((response)=>{
-         return response.json();
-    }).then((data)=>{
+    }).then((response)=>{ //recibe la info de la respuesta
+         return response.json(); 
+    }).then((data)=>{ // ya trabaja con la respuesta
         console.log(data);
+        localStorage.setItem("nombrePokemon", data.name);
+        // localStorage.removeItem("nombrePokemon")
     }).catch((error)=>{
         console.error("ups no se que paso");
     });
      console.log("Despues del fetch");
 
+function peleaPokemon () {
+    const miPrimerPokemon = localStorage.getItem("nombrePokemon")
+    console.log("primerContrincanta:" + miPrimerPokemon);
+}
 
-
-
+// peleaPokemon();
 
 
 
