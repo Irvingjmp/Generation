@@ -1,9 +1,8 @@
-function getFormValue(event) {
-    event.preventDefault();
-
-    let nombre = document.forms["f1"]["nombre"].value;
-    let apellido = document.forms["f1"]["apellido"].value;
-
-    console.log("Nombre: " + nombre);
-    console.log("Apellido: " + apellido);
-}
+// Exercise #2
+// Write a JavaScript function to get the values of First and Last name from the following form.
+// Print out the names to the console.
+function getFormValue() {
+    const form = document.getElementById('form1');
+    const nombre = form.nombre.value;
+    const apellido = form.apellido.value;
+    console.log(`Nombre: ${nombre}, Apellido: ${apellido}`)};
