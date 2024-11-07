@@ -5,6 +5,13 @@ let frutas = new Array("manzana","pera","sandia");
 console.log(numeros[4]) // Espero que se imprima en consola el numero 5
 frutas[0] = "Uvas"; //Espero que en donde habia manzanas, ahora tengamos uvas
 console.log(frutas[0]); //Espero que el arreglo en el indice 0 me retorne uvas
+<<<<<<< HEAD
+//Existe metodos pre-creados para los arreglos, porque los arreglos son Objetos
+//indexOf(), para usar un metodo de un arreglo 
+//se usa la syntaxis nombre_arreglo.nombreMetodo
+console.log(frutas.indexOf("Uvas")); // esperamos de retorno el indice de donde estan las uvas [0]
+console.log(frutas.indexOf("manzana")) // retornar un -1
+=======
 
 // Los arreglos tienen atributos y uno de ellos es longitud
 //console.log(dinamico.length)
@@ -96,3 +103,4 @@ function setBastaFlag(flag){
             i++
          }while(flag)
 } // Al menos se ejecuta 1 vez
+>>>>>>> ed1f8586503c3fa18438ccee4b9b46721575cff5

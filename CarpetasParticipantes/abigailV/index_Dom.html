@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset=utf-8 />
+     <link rel="stylesheet" href="styles.css">
+     <title>JS DOM paragraph style</title>
+   </head> 
+  
+   <body>
+     <p id="text">JavaScript Exercises #1</p> 
+    <div>
+       <button id="jsstyle" onclick="js_style()">Style</button>
+     </div>
+     
+     <script>
+function js_style(){
+var paragraph = document.getElementById("text");
+
+paragraph.style.fontFamily = "Times New Roman";
+paragraph.style.fontSize ="10px";
+paragraph.style.color= "pink"
+
+}
+     </script>
+
+
+     <!--<script src="script.js"></script> -->
+   </body>
+ </html>
+
+
