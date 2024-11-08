@@ -24,7 +24,10 @@ Métodos
     Estático (static) Utiliza la palabra reservada static, nos permite ejecutar una clase
     sin instanciar el objeto
 
-    Accesores: **queda pendiente**
+    Accesores: Los métodos accesores son funciones dentro de una clase que te permiten 
+    obtener o modificar los valores de los atributos privados de un objeto. En JavaScript, 
+    estos métodos se implementan como getters y setters. Su función principal es controlar 
+    el acceso a los atributos de una clase, lo que ayuda a proteger y encapsular los datos.
 
 Principios SOLID
     Principio de responsabilidad unica (SRP): Se refiere a que cada que asignamos una clase,
