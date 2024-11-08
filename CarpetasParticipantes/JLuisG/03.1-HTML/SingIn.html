@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="SingIn.css">
+    <link rel="icon" type="/images/favicon.png" href="/images/favicon.png">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <ul>
+        <li><a href="/Home.html">Home</a></li>
+        <li><a href="/SignIn.html">Sign In</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Models</a>
+            <div class="dropdown-content">
+                <a href="/2doors.html">2 Doors</a>
+                <a href="#4doors">4 Doors</a>
+                <a href="#offroad">Off-Road</a>
+                <a href="#luxury">Luxury</a>
+                <a href="#motorcycles">Motorcycles</a>
+                <a href="#special">Special</a>
+            </div>
+        </li>
+    </ul>
+
+    <!-- Formulario -->
+    <form class="signin-form">
+        <a href="/SingUp.html" target="_blank">Aun no tienes una cuenta? Creala ahora!.</a><br><br>
+
+        <label>Nombre de usuario:</label>
+        <input type="text" placeholder="Escribe tu nombre de usuario." minlength="6" maxlength="20"><br><br>
+
+        <label for="correo">Ingresa tu email:</label>
+        <input type="email" id="correo" placeholder="Ingresa tu @email"><br><br>
+
+        <label>Ingresa tu contraseña:</label>
+        <input type="password" placeholder="Ingresa tu contraseña." minlength="6" maxlength="20"><br><br>
+
+        <label>Telefono:</label>
+        <input type="tel" placeholder="(Opcional) 555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+
+        <label id="reminder">Si ovidaste tu contraseña coloca tu numero de telefono para crear una nueva contraseña,
+            deja vacio el
+            campo "contraseña" y dale enviar, te enviaremos un mensaje SMS con un codigo para
+            reestablecerla.</label><br>
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>
