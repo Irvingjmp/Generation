@@ -26,14 +26,25 @@ function procesoAsincrono(){
 procesoAsincrono();
 //console.log("despues de la funcion asincrona");
 
-const url = "https://pokeapi.co/api/v2/pokemon/Bulbasaur";
+const url = "https://pokeapi.co/api/v2/pokemon/bulbasaur";
 
 console.log("antes del fetch");
 fetch(url,{
 method: 'GET'
 }).then((response)=>{
-    console.log(response.data.name);
+     return response.json();
+}).then((data)=>{
+    console.log(data);
+    localStorage.setItem("nombrePokemon", data.name);
+   // localStorage.removeItem("nombrePokemon");
 }).catch((error)=>{
     console.error("ups no se que paso");
 });
  console.log("Despues del fetch");
+
+ function peleaPokemon() {
+    const miPrimerPokemon = localStorage.getItem("nombrePokemon");
+    console.log("primerContrincante:" + miPrimerPokemon );
+ }
+
+peleaPokemon();
