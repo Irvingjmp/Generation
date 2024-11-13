@@ -28,23 +28,66 @@ procesoAsincrono();
 
 const url = "https://pokeapi.co/api/v2/pokemon/bulbasaur";
 
-console.log("antes del fetch");
+//console.log("antes del fetch");
 fetch(url,{
 method: 'GET'
 }).then((response)=>{
      return response.json();
 }).then((data)=>{
-    console.log(data);
+  //  console.log(data);
     localStorage.setItem("nombrePokemon", data.name);
    // localStorage.removeItem("nombrePokemon");
 }).catch((error)=>{
-    console.error("ups no se que paso");
+   // console.error("ups no se que paso");
 });
- console.log("Despues del fetch");
+// console.log("Despues del fetch");
 
  function peleaPokemon() {
     const miPrimerPokemon = localStorage.getItem("nombrePokemon");
-    console.log("primerContrincante:" + miPrimerPokemon );
+ //   console.log("primerContrincante:" + miPrimerPokemon );
  }
 
 peleaPokemon();
+
+//Promesas
+const failed = false;
+
+const myPromise = new Promise((resolve, reject) => { 
+    if(failed)
+        reject('fail promise');
+    else
+        resolve('resolved!!')
+});
+
+function success(result){
+  console.log(result);
+}
+
+function onFailed(error){
+  console.log(error);
+}
+
+//myPromise.then((result) => success(result))
+//.catch((error) => onFailed(error));
+
+//ASYNC/AWAIT
+function dummyFetch(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            reject("ErrorDummy");
+        },3000)
+    })
+}
+//Desde el uso de la palabra reservada async, estas declarando que la función es asincrona y por lo tanto
+//retorna una promesa
+async function funcionAsync(){
+    try{
+        const data = await dummyFetch(); // aqui "esperamos" a que la promesa se resuelva. 
+        console.log(data);// aqui esperamos que nos imprima "datosDummys"
+    } catch (err){
+        console.error("error de Dummy"+err);
+    }
+}
+
+funcionAsync();
+
