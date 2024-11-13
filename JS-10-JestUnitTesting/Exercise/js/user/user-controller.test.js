@@ -16,4 +16,18 @@ test('remove user to userController', () => {
     expect(userController.users).not.toContain(user);
   });
 
+  test("verifies that email is on the list",()=>{
+    let user = new User(1234,"Santiago", "santiago@generation.org");
+    userController.add(user);  
+    expect(userController.findByEmail(user.email)).toContain(user.email);
+  })
+
+  test("verifies that id is on the list",()=>{
+    let user = new User(1234,"Santiago", "santiago@generation.org");
+    userController.add(user);  
+    expect(userController.findById(user.id)).toBe(user.id);
+  })
+
+
+
 
