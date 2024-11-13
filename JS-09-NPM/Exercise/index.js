@@ -1,8 +1,10 @@
 // Using Axios
 
-// Git clone the exercise folder (https://github.com/generation-org/NPM-Practice).
+// Use the exercise folder NPM.
 
-// Make sure you have installed NPM properly. You can reference here if you are having trouble with your installation.
+// Make sure you have installed NPM properly. You can reference here if you are having trouble with your installation and to get some hints:
+//https://jestjs.io/docs/asynchronous
+//https://devhints.io/jest
 
 // This folder doesn't have NPM initialized. Create an NPM project and fill in as many fields as you can with information to create the package.json. (Hint use: npm init)
 
