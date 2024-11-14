@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(78, 72, 72);
+}
+
+/* Barra de navegación */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #38444d;
+/* Color de fondo de la navbar */
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* Color de fondo cuando se hace hover */
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #d0e60a;
+
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d0e60a;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    /* Color de fondo al hacer hover en los links del dropdown */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilo del formulario */
+.signin-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#reminder {
+
+    font-size: x-small;
+}
+
+
+.signin-form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.signin-form input[type="text"],
+.signin-form input[type="email"],
+.signin-form input[type="password"],
+.signin-form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    display: inline-block;
+    border: 4px outset #86841075;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+}
+
+.signin-form input[type="submit"],
+.signin-form input[type="button"] {
+    background-color: #adaf4c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signin-form input[type="submit"]:hover,
+.signin-form input[type="button"]:hover {
+    background-color: #2bff0056;
+}
